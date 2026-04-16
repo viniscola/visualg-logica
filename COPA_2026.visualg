@@ -1,0 +1,20 @@
+algoritmo "COPA_2026"
+
+var
+  v: real
+  f: real
+
+inicio
+
+  escreval("Digite o valora acumulado na conta: R$ ")
+  leia(v)
+  escreval(v)
+
+  se (v >= 25000) entao
+    escreval("Partiu América do Norte")
+  senao
+    f <- 25000 - v
+    escreval("Faltam R$ ", f, " para atingir a meta.")
+  fimse
+
+fimalgoritmo

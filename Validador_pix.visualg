@@ -1,0 +1,34 @@
+algoritmo "Validador_Pix"
+
+var
+  valorPix: real
+  saldo: real
+  cheque: real
+
+inicio
+
+  escreval("Digite o valor do Pix: R$ ")
+  leia(valorPix)
+
+  escreval("Digite o saldo atual: R$ ")
+  leia(saldo)
+
+  se (saldo >= valorPix) entao
+    escreval("Transacao realizada")
+
+  senao
+
+    escreval("Digite o limite do cheque especial: R$ ")
+    leia(cheque)
+
+    se (saldo + cheque >= valorPix) entao
+      escreval("Transacao via Cheque Especial")
+
+    senao
+      escreval("Saldo Insuficiente")
+
+    fimse
+
+  fimse
+
+fimalgoritmo

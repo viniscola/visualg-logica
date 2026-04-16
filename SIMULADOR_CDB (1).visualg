@@ -1,0 +1,26 @@
+algoritmo "Simulador_CDB"
+
+var
+  v: real
+  p: inteiro
+  t: real
+
+inicio
+
+  escreval("Digite o valor que deseja investir: ")
+  leia(v)
+  escreval(v)
+  escreval("Digite o prazo em meses: ")
+  leia(p)
+  escreval(p)
+
+  // Verificação do prazo
+  se (p > 12) entao
+    t <- 0.12
+    escreval("Taxa aplicada: 12% ao ano")
+  senao
+    t <- 0.08
+    escreval("Taxa aplicada: 8% ao ano")
+  fimse
+
+fimalgoritmo
