@@ -1,0 +1,38 @@
+algoritmo "dia_consecutivo"
+
+var
+  dia: caractere
+
+inicio
+
+  escreval("Digite um dia da semana por extenso: ")
+  leia(dia)
+
+  escolha dia
+    caso "domingo"
+      escreval("O proximo dia eh: segunda")
+
+    caso "segunda"
+      escreval("O proximo dia eh: terca")
+
+    caso "terca"
+      escreval("O proximo dia eh: quarta")
+
+    caso "quarta"
+      escreval("O proximo dia eh: quinta")
+
+    caso "quinta"
+      escreval("O proximo dia eh: sexta")
+
+    caso "sexta"
+      escreval("O proximo dia eh: sabado")
+
+    caso "sabado"
+      escreval("O proximo dia eh: domingo")
+
+    outrocaso
+      escreval("dia invalido! Digite corretamente")
+
+  fimescolha
+
+fimalgoritmo

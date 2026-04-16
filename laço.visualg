@@ -1,0 +1,14 @@
+algoritmo "laço de repetição"
+
+// declaracao de variavel
+var:
+  i: inteiro // var que armazena quantidade e voltas
+
+// começando o programa
+inicio
+  // estrutura para o loop/loopping(laço)
+  para i de 1 ate 3 faca
+  escreva(" Loop ", i)
+  fimpara
+
+fimalgoritmo
